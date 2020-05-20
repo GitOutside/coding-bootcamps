@@ -1,0 +1,20 @@
+body {background-color: beige}
+
+nav > ul > li {
+    display: inline;
+    border: solid 3px black;
+    margin: 80px;
+    margin-left: 200px;
+    margin-right: 100px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color:cadetblue;
+}
+#one {color: red}
+
+#two {color: blue}
+
+#three {color: green}
+
+#four {font-style: italic;}
