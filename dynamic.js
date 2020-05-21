@@ -17,3 +17,12 @@ if (hourNow > 18) {
 }
 
 document.write('<h3>' + greeting + '</h3>');
+
+
+var day = prompt('Do you think you might want to code?')
+
+if (day = 'Yes') {
+    message = 'Let the coding begin' + userName;
+} else if (day = 'No') {
+    message = 'Are you sure' + userName ?;
+}
