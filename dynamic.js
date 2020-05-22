@@ -18,9 +18,7 @@ function getTime(){
   console.log(hourNow);
   return hourNow;
 }
-
-
-if (hourNow > 18) {
+if (hourNow > 18){
   greeting = 'Good evening, ' + userName;
 } else if (hourNow > 12) {
   greeting = 'Good afternoon, ' + userName; 
@@ -33,26 +31,25 @@ document.write('<h3>' + greeting + '</h3>');
 console.log(greeting);
 
 
+
+var response;
+
+
 function askSolve(userName){
-  var experience = prompt('Do you like solving problems?').toLowerCase();
-  console.log('before the while ' + experience);
+  var experience = prompt(userName + ' do you like solving problems?').toLowerCase();
   while((experience !== 'no') && (experience !== 'yes')){
-    console.log('in while but before re-assign ' + experience);
-    experience = prompt(userName + ', Do you like solving problems?').toLowerCase();
-    console.log('in while but after re-assign ' + experience);
+      experience = prompt(userName + ' do you like solving problems?').toLowerCase();
+  }
+
+  if (experience === 'yes') {
+    response = 'Great! You just might like coding, ' + userName;
   }
   return experience;
 }
+console.log(userName + 'beforetest');
 askSolve(userName);
 
-var response;
-console.log(greeting);
-
-if (experience === 'yes') {
-  response = 'Great! You just might like coding, ' + userName;
-}
-
-document.write(response)
+document.write(response);
 
 
 
